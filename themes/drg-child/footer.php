@@ -32,12 +32,15 @@
 			while($post_query->have_posts()){ //checking against multiple
 				$post_query->the_post(); //getting the ONE
 				?>
-				<br>
+				<div class="footer-stuff"><br>
 				<?php
 				the_post_thumbnail();
 				the_title();
 				the_excerpt();
 				the_permalink();
+				?>
+				</div>
+				<?php
 			}
 			wp_reset_postdata(); //resets query back to default query
 		}
