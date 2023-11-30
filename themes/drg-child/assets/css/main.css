@@ -13,3 +13,23 @@ h2.entry-title.default-max-width a, h2.wp-block-heading{
 p.site-title a:hover{
     color: #aa8e30;
 }
+
+h3.wp-block-heading{
+    text-decoration: underline;
+}
+
+.wp-block-group__inner-container{
+    background-color: black;
+}
+
+a.wp-block-button__link{
+    background: white;
+}
+
+a.wp-block-button__link:hover{
+    background-color: grey;
+}
+
+.footer-stuff{
+    max-width: 10%;
+}
