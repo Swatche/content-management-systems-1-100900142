@@ -1,0 +1,15 @@
+h1.entry-title, h1.page-title{
+    text-align: center;
+}
+
+h2.entry-title.default-max-width a, p.site-title a{
+    text-decoration: none;
+}
+
+h2.entry-title.default-max-width a, h2.wp-block-heading{
+    color: #f5cb42;
+}
+
+p.site-title a:hover{
+    color: #aa8e30;
+}
