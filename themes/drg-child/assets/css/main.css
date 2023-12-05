@@ -40,11 +40,34 @@ a.wp-block-button__link:hover{
     padding: 20px;
 }
 
-.footer-title{
-    color: #f5cb42;
+.thumbnail-container{
+    width: 90%;
+    margin: 0 auto 10px auto;
 }
 
-.thumbnail-container{
-    width: 70%;
-    margin: 0 auto;
+.footer-title{
+    color: #f5cb42;
+    text-align: center;
+}
+
+.footer-query p{
+    margin-bottom: 15px;
+}
+
+a.more-link{
+    color: #f5cb42;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+a.link{
+    border: 1px solid white;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #f5cb42;
+    color: black;
+}
+
+a.link:hover{
+    background-color: none;
 }

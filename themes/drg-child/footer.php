@@ -55,7 +55,7 @@
 						?>
 						<?php
 						?>
-						<a href="<?php the_permalink(); ?>">Read more</a>
+						<a href="<?php the_permalink(); ?>" class="link">Read more</a>
 						<?php
 						?>
 					</div>
