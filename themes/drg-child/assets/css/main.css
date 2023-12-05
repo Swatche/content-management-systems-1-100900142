@@ -30,6 +30,21 @@ a.wp-block-button__link:hover{
     background-color: grey;
 }
 
-.footer-stuff{
-    max-width: 10%;
+.footer-query-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.footer-query{
+    padding: 20px;
+}
+
+.footer-title{
+    color: #f5cb42;
+}
+
+.thumbnail-container{
+    width: 70%;
+    margin: 0 auto;
 }
