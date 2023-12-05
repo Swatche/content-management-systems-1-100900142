@@ -28,23 +28,45 @@
 		
 		$post_query = new WP_Query($post_args);
 		
-		if( $post_query->have_posts() ){
-			while($post_query->have_posts()){ //checking against multiple
-				$post_query->the_post(); //getting the ONE
-				?>
-				<div class="footer-stuff"><br>
-				<?php
-				the_post_thumbnail();
-				the_title();
-				the_excerpt();
-				the_permalink();
-				?>
-				</div>
-				<?php
+		?>
+		<div class="footer-query-container">
+			<?php
+			if( $post_query->have_posts() ){
+				while($post_query->have_posts()){ //checking against multiple
+					?>
+					<?php
+					?>
+					<div class="footer-query">
+					<?php
+						$post_query->the_post(); //getting the ONE
+						?>
+						<div class="thumbnail-container">
+							<?php
+							the_post_thumbnail();
+							?>
+						</div>
+						<?php
+						?>
+						<h3 class="footer-title"><?php the_title();?></h3>
+						<?php
+						?>
+						<p><?php the_excerpt();?></p>
+						<?php
+						?>
+						<?php
+						?>
+						<a href="<?php the_permalink(); ?>">Read more</a>
+						<?php
+						?>
+					</div>
+					<?php
+				}
+				wp_reset_postdata(); //resets query back to default query
 			}
-			wp_reset_postdata(); //resets query back to default query
 		}
-	}
+	?>
+	</div>
+	<?php
 	?>
 
 	<?php get_template_part( 'template-parts/footer/footer-widgets' ); ?>
