@@ -17,7 +17,8 @@
 	</div><!-- #content -->
 
 	<?php 
-	if (is_front_page() || is_page('about')){
+	//	USE THE SLUG FOR is_page(')
+	if (is_front_page() || is_page('about-cooperative-first-person-shooter')){
 		$post_args = array(
 			'post_type'      => 'post',
 			'posts_per_page' => 3,
