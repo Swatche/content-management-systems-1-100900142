@@ -19,7 +19,7 @@
 	<?php 
 	//	USE THE SLUG FOR is_page('x)
 	// if (is_front_page() || is_page('about-cooperative-first-person-shooter')){
-	if (is_front_page() && is_page_template('templates/page-about.php')){
+	if (is_front_page() || is_page_template('templates/page-about.php')){
 		$post_args = array(
 			'post_type'      => 'post',
 			'posts_per_page' => 3,
